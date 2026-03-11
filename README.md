@@ -129,3 +129,7 @@ Mean Squared Error (MSE)
 ## License
 
 MIT
+
+## Dashboard Preview
+
+![Dashboard](assets/dashboard.png)
