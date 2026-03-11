@@ -1,3 +1,5 @@
+Python • TensorFlow • Streamlit • Time Series Forecasting
+
 # Netflix Stock Price Prediction 📈
 
 An end-to-end machine learning project that predicts **Netflix (NFLX) stock prices** using **LSTM neural networks** and provides an interactive **Streamlit dashboard** for forecasting and visualization.
