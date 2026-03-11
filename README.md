@@ -16,6 +16,7 @@ The project demonstrates a full ML workflow including data preprocessing, model 
 
 ---
 
+
 ## Tech Stack
 
 Python
@@ -116,6 +117,17 @@ Evaluation Metric
 Mean Squared Error (MSE)
 
 ---
+
+## Model Performance
+
+The LSTM model was trained on historical Netflix stock prices and evaluated using Mean Squared Error (MSE). The model is able to capture overall stock trends and generate short-term forecasts.
+
+Training loss visualization:
+
+![Training History](training_history.png)
+
+
+
 
 ## Future Improvements
 
