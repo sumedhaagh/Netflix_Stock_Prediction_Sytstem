@@ -1,87 +1,131 @@
-# Netflix_Stock_Prediction_Sytstem
+# Netflix Stock Price Prediction 📈
 
-# Netflix Stock Price Prediction & Forecasting 🎥📈
+An end-to-end machine learning project that predicts **Netflix (NFLX) stock prices** using **LSTM neural networks** and provides an interactive **Streamlit dashboard** for forecasting and visualization.
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-2.12.0-orange)
-![Streamlit](https://img.shields.io/badge/Streamlit-1.25.0-red)
+The project demonstrates a full ML workflow including data preprocessing, model training, evaluation, and deployment through a simple web interface.
 
-An end-to-end machine learning project that predicts Netflix (NFLX) stock prices using LSTM neural networks, with a Streamlit web interface for interactive forecasting.
+---
 
-## Features ✨
+## Features
 
-- **LSTM Model**: Deep learning model trained on historical Netflix stock data
-- **Interactive Dashboard**: Visualize predictions with Streamlit
-- **30-Day Forecast**: Generate multi-day stock price projections
-- **Live Data Integration**: Option to fetch current market data (via Yahoo Finance)
+• LSTM-based deep learning model for time series forecasting
+• Interactive Streamlit dashboard for visualization
+• Multi-step forecasting (up to 30 days ahead)
+• Historical stock data integration using Yahoo Finance
+• Visual comparison of predicted vs actual prices
 
-## Project Structure 🗂️
-Netflix-Stock-Prediction/
-├── data/
-│ ├── raw/ # Original dataset (CSV/zip)
-│ └── processed/ # Cleaned and processed data
-├── models/ # Saved model files (.h5, .pkl)
-├── notebooks/ # Jupyter notebooks
-│ ├── 1_data_preparation.ipynb
-│ └── 2_model_training.ipynb
-├── app/ # Streamlit application
-│ ├── app.py # Main application
-│ └── utils.py # Helper functions
-└── requirements.txt # Python dependencies
+---
 
-## Installation ⚙️
+## Tech Stack
 
-1. Clone the repository:
-```bash
-git clone https://github.com/SumedhaGhosh2005/Netflix_Stock_Prediction_Sytstem.git
-cd netflix-stock-prediction
+Python
+TensorFlow / Keras
+Pandas & NumPy
+Streamlit
+Plotly
+Yahoo Finance API
 
+---
+
+## Project Structure
+
+```
+netflix-stock-prediction-system
+│
+├── data
+│   ├── raw                # Original dataset
+│   └── processed          # Cleaned datasets
+│
+├── notebooks
+│   ├── data_preparation.ipynb
+│   └── model_training.ipynb
+│
+├── models                 # Saved trained models
+│
+├── app
+│   ├── app.py             # Streamlit application
+│   └── utils.py           # Helper functions
+│
+└── requirements.txt
+```
+
+---
+
+## Installation
+
+Clone the repository
+
+```
+git clone https://github.com/yourusername/netflix-stock-prediction-system.git
+cd netflix-stock-prediction-system
+```
+
+Create a virtual environment
+
+```
 python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
+```
 
+Activate the environment
+
+Windows
+
+```
+venv\Scripts\activate
+```
+
+Linux / Mac
+
+```
+source venv/bin/activate
+```
+
+Install dependencies
+
+```
 pip install -r requirements.txt
 ```
-Usage 🚀
-Data Preparation
-Run the Jupyter notebook in order:
 
-notebooks/2_model_training.ipynb
+---
 
-Run Streamlit App
-```cd app
-streamlit run app.py
-The app will launch at http://localhost:8501
+## Running the Application
+
+Start the Streamlit app
 
 ```
-Technical Details 🛠️
-Model Architecture: 2-layer LSTM with Dropout
+streamlit run app/app.py
+```
 
-Training Data: Netflix stock data 2010-2023
+The dashboard will open at:
 
-Metrics: MSE (Mean Squared Error)
+```
+http://localhost:8501
+```
 
-Frontend: Streamlit with Plotly charts
+---
 
-Contributing 🤝
-Pull requests are welcome! For major changes, please open an issue first.
+## Model Details
 
-License 📄
+Architecture
+2-layer LSTM network with dropout regularization
+
+Training Data
+Netflix stock data from 2010–2023
+
+Evaluation Metric
+Mean Squared Error (MSE)
+
+---
+
+## Future Improvements
+
+• Experiment with Transformer-based time series models
+• Incorporate additional financial indicators
+• Improve forecasting horizon and uncertainty estimation
+• Deploy the application on cloud infrastructure
+
+---
+
+## License
+
 MIT
-```
-
-### Key Features of This README:
-1. **Badges** - Visual indicators for technologies used
-2. **Clear Structure** - Organized sections with emojis
-3. **Installation Guide** - Step-by-step setup instructions
-4. **Visual Hierarchy** - Proper markdown formatting
-5. **Technical Details** - Shows the ML stack clearly
-
-### To Add:
-1. Replace placeholder screenshot with actual app screenshot
-2. Update the GitHub URL with your actual repository link
-3. Add your dataset source/attribution if required
-4. Include any special instructions for your specific setup
-
-Would you like me to modify any particular section or add more details about specific components?
-```
